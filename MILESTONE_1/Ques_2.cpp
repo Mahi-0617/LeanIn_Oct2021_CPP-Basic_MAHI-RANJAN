@@ -10,3 +10,10 @@ int main()
     cout<< "Your entered number is : "<<Entered_number;
     return 0;
 }
+
+
+
+// OUTPUT:
+// Enter any number which you want to print
+// 78
+// Your entered number is : 78
