@@ -44,7 +44,7 @@ void search(int arr[], int num)
 void modify(int arr[],int num)
 {
 
-int t,a[10],n,m,s,j=0,b[10];
+int t,a[10],s;
 
   cout<<"\nGiven values are:";
   traverse(arr, num);
@@ -55,9 +55,9 @@ int t,a[10],n,m,s,j=0,b[10];
   cin>>s;
   for(int i=0;i<num;i++)
   {
-    if(i==t)
+    if(i==t-1)
     {
-       a[i]=s;
+       arr[i]=s;
     }
   }
   cout<<"\nUpdated value is:";
@@ -106,7 +106,8 @@ int t,a[10],n,m,s,j=0,b[10];
         default:
             cout << "INVALID CHOICE ";
         }
-    }while (choice <4);
+    }
+    while (choice <4);
 
 
     return 0;
@@ -116,7 +117,11 @@ int t,a[10],n,m,s,j=0,b[10];
 // Enter the size of array :
 // 5
 // Enter the elements of the array :
-// 43 54 66 0 21
+// 12
+// 34
+// 56
+// 78
+// 90
 
 
 //         MENUs :
@@ -127,11 +132,11 @@ int t,a[10],n,m,s,j=0,b[10];
 
 // Enter your choice:
 //  1
-// 43
-// 54
-// 66
-// 0
-// 21
+// 12
+// 34
+// 56
+// 78
+// 90
 
 
 //         MENUs :
@@ -141,11 +146,11 @@ int t,a[10],n,m,s,j=0,b[10];
 // 4: Exit
 
 // Enter your choice:
-//  2 
+//  2
 
-// Enter Element to Search : 0
+// Enter Element to Search : 90
 
-// Linear Search : Element  : 0 : Found :  Position : 4.
+// Linear Search : Element  : 90 : Found :  Position : 5.
 
 
 //         MENUs :
@@ -155,5 +160,46 @@ int t,a[10],n,m,s,j=0,b[10];
 // 4: Exit
 
 // Enter your choice:
-//  6
+//  3
+
+// Given values are:12
+// 34
+// 56
+// 78
+// 90
+
+// Enter the position to be update:5
+
+// Enter the value to be update:100
+
+// Updated value is:12
+// 34
+// 56
+// 78
+// 100
+
+
+//         MENUs :
+// 1: Traverse the array
+// 2: Search an element in the array
+// 3: Modify the element in the array
+// 4: Exit
+
+// Enter your choice:
+//  1
+// 12
+// 34
+// 56
+// 78
+// 100
+
+
+//         MENUs :
+// 1: Traverse the array
+// 2: Search an element in the array
+// 3: Modify the element in the array
+// 4: Exit
+
+// Enter your choice:
+//  7
 // INVALID CHOICE
